@@ -1,135 +1,76 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Module(3).html</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jguery/1.11.3/jguery.min.js"></script>
-</head>
-<style>
-  * { 
-        margin: 0;
-        padding: 0;
-       }
-  
-  h1 a{
-    background-color: yellow;
-    color: red;
-    font-size: 30px;
-  }
-   
-  ul{
-  float: right;
-  font-size: 25px;
-  } 
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
 
-  li{
-  display: inline-block;
-  padding-left: 10px;
-  }
- 
-  h2 {
-  font-size: 35px;
-  background-color: #ff9ff3;
-  text-align: center;
-  border: dashed 5px #192a56;
- }
- a{
-   font-size: 35px;
-  color: black;
- }
-  p{
-  font-size: 20px;
-  background-color: yellow;
-  border: solid 2px black;
- }
- a.hover{
-  text-decoration: underline;
-  font-size: 15px;
- }
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <title>Module 3 Solution</title>
+     <!--Used Google FOnts-->
+      <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <!--Boothstrap CDN CSS only-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
 
-</style>
-<body>
-  <nav class="navbar navbar-default">
-   <div class="container">
-        <div class="navbar-header">
-          <a href="#" class="pull-left visible-md visible-lg">
-            
+   <!--Header-->
 
-          <div class="navbar-brand">
-           
-            
-            
-          </div>
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"> </span>
-              <span class="icon-bar"> </span>
-              <span class="icon-bar">  </span>
-              </button>
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light bg-secondary">
+      <a class="navbar-brand" href="#"><h1>Food, LLC</h1>
+      </a>
 
-          </div>
-         <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li>
-              <a href="#A">
-                <span></span><br class="text-center hidden-xs"> chicken</a>
-            </li>
-            <li>
-              <a href="#B">
-                <span ></span><br class="text-center hidden-xs"> Beef</a>
-            </li>
-            <li>
-              <a href="#C">
-                <span ></span><br class="text-center hidden-xs"> Suchi</a>
-            </li>
-            
-          </ul><!-- #nav-list -->
-        </div><!-- .collapse .navbar-collapse -->
+      <button class="hidden-md navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container text-center visible-xs">
+            <div id="menuitem" class="container ">
+              <div><a href="#t1">Chicken</a></div>
+              <div><a href="#t2">Beef</a></div>
+              <div><a href="#t3">Sushi</a></div>
+            </div>
         </div>
-      </div>
-<!--
-    <ul class="nav navbar-nav navbar-right">
-      <li> <a href="#"> chicken</a></li>
-      <li><a href="#"> Beef</a></li>
-      <li><a href="#"> Suchi</a></li>
-      </ul>
-    -->
 
-  </nav>
-  <header class="bgimage">
-    <h1><a href="#">Food LLC</a> </h1>
-  </header>
-  <div class="container">
-    <div class="row">
-      
-      <div class="col-lg-4">
-  <section>
-    <h2> <a href="#">chicken</a> </h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <a href="#">Back to top</a>
-</section>
-</div>
- <div class="col-lg-4">
-  <section>
-    <h2><a href="#">Beef</a></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <a href="#">Back to top</a>
-</section>
-</div>
-<div class="col-lg-4">
-  <section>
-    <h2><a href="#">Suchi</a></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <a href="#">Back to top</a>
-</section>
-</div>
-</div>
-</body>
+          </div>
+     </div>
+
+    </nav>
+    <!--End of Header section-->
+    <!--Body-->
+    <div class="container text-center">
+    <h1>Our Menu</h1>
+    </div>
+
+
+    <div class="container-fluid">
+        <div id="b1" class="col-md-4 col-sm-6 col-xs-12">
+          <h3 id="t1" class="ht text-center">Chicken</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          
+          <a href="#t1">Back to top</a>
+        </div>
+
+        <div id="b2" class="col-md-4 col-sm-6 col-xs-12">
+          <h3 id="t2" class="ht text-center">Beef</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          
+          <a href="#t2">Back to top</a>
+        </div>
+
+        <div id="b3" class="col-md-4 col-sm-12 col-xs-12">
+          <h3  id="t3" class="text-center">Sushi</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          
+          <a href="#t3">Back to top</a>
+        </div>
+
+    </div>
+
+
+    <!--Bootstrap CDN JS popper.js JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
 </html>
-
-
- 
-           
-            
