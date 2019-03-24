@@ -1,0 +1,15 @@
+* { 
+        margin: 0;
+        padding: 0;
+       }
+  
+  h2 {
+    background-color: yellow;
+    color: red;
+    font-size: 30px;
+  }
+
+   p{
+   	background-color: pink;
+   	border: solid;
+   }
